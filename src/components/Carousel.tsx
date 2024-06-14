@@ -1,5 +1,6 @@
 import Slider from "react-slick";
 import { carouselData } from "../data/data";
+import Avatar from "./Avatar";
 
 const Carousel = () => {
   const setting = {
@@ -8,37 +9,37 @@ const Carousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
+    speed: 1000,
     autoplaySpeed: 3000,
     cssEase: "linear",
   };
+
   return (
-    <div className="slider-container">
-      {/* <Slider {...setting}> */}
-      <div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minus,
-          sint animi molestiae magni cumque atque minima dolores dolore
-          accusamus fuga quaerat repellat veritatis vitae necessitatibus sed,
-          ullam maxime aut? Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Omnis vitae error tenetur similique maxime, atque id maiores
-          exercitationem reiciendis ab expedita consequuntur nostrum dignissimos
-          voluptatum? Iusto libero consequatur officiis aperiam!
-        </div>
-        <div>Barkha Gupta</div>
-        <div>Full Stack developer</div>
-      </div>
-      {/* </Slider> */}
+    <div className="w-[400px] text-sm tracking-wide text-[#1e293b] border border-red-500">
+      <Slider {...setting}>
+        {carouselData.map(({ testimony, author, designation }) => (
+          <div className="h-[500px] w-full">
+            <div
+              key={author}
+              className="border border-slate-200 flex flex-col gap-4 h-full justify-center p-2"
+            >
+              <div>{`"${testimony}"`}</div>
+
+              <div className="flex gap-2 flex-wrap items-center">
+                <div>
+                  <Avatar />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <div className="font-[700] text-[#0082D7]">{author}</div>
+                  <div className="text-xs">{designation}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };
 
 export default Carousel;
-
-// {carouselData.map(({ testimony, author, designation }) => (
-//     <div key={author}>
-//       <div>{`"${testimony}"`}</div>
-//       <div>{author}</div>
-//       <div>{designation}</div>
-//     </div>
-//   ))}
