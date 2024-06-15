@@ -30,3 +30,76 @@ export const carouselData: CarouselData[] = [
     designation: "Social Impact Entrepreneur",
   },
 ];
+
+interface logoData {
+  imageUrl: string;
+  top: string;
+  left?: string;
+  right?: string;
+}
+
+export const logoData: logoData[] = [
+  {
+    imageUrl:
+      "https://imagedelivery.net/zZi_VLBckmtLzucvU2-pnQ/39d7500f-7966-41a6-0b6c-380ed1791600/w=96,q=75",
+    top: "10",
+    left: "10",
+    right: "",
+  },
+  {
+    imageUrl:
+      "https://imagedelivery.net/zZi_VLBckmtLzucvU2-pnQ/6ad8358d-8aeb-4afd-a706-b91a64e90800/w=96,q=75",
+    top: "15",
+    left: "20",
+    right: "",
+  },
+  {
+    imageUrl:
+      "https://imagedelivery.net/zZi_VLBckmtLzucvU2-pnQ/6a0ea9ad-86f6-4fbb-097b-5ca3fd7d2400/w=96,q=75",
+    top: "40",
+    left: "12",
+    right: "",
+  },
+  {
+    imageUrl:
+      "https://imagedelivery.net/zZi_VLBckmtLzucvU2-pnQ/652c14a0-27bf-453d-ad16-87a28c1f9c00/w=96,q=75",
+    top: "75",
+    left: "12",
+    right: "",
+  },
+  {
+    imageUrl:
+      "https://imagedelivery.net/zZi_VLBckmtLzucvU2-pnQ/d61fa567-80a8-4298-8eb0-a7e41b12fb00/w=96,q=75",
+    top: "60",
+    left: "22",
+    right: "",
+  },
+  {
+    imageUrl:
+      "https://imagedelivery.net/zZi_VLBckmtLzucvU2-pnQ/f07a4c24-d439-4ee3-9f23-ae2a350fcb00/w=96,q=75",
+    top: "10",
+    left: "",
+    right: "20",
+  },
+  {
+    imageUrl:
+      "https://imagedelivery.net/zZi_VLBckmtLzucvU2-pnQ/665c33c0-886c-4f60-2665-ce8530972000/w=96,q=75",
+    top: "22",
+    left: "",
+    right: "7",
+  },
+  {
+    imageUrl:
+      "https://imagedelivery.net/zZi_VLBckmtLzucvU2-pnQ/94e8b25d-7eb9-4e6d-b7b7-26970b2df900/w=96,q=75",
+    top: "42",
+    left: "",
+    right: "18",
+  },
+  {
+    imageUrl:
+      "https://imagedelivery.net/zZi_VLBckmtLzucvU2-pnQ/92bcc366-07f5-47da-b5b6-7ed5e4da5600/w=96,q=75",
+    top: "70",
+    left: "",
+    right: "14",
+  },
+];

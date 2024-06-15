@@ -22,7 +22,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="text-sm tracking-wide text-[#1e293b]">
+    <div className=" tracking-wide text-[#1e293b] ">
       <Slider {...setting}>
         {carouselData.map(({ testimony, author, designation }) => (
           <div key={author} className="h-[480px] w-full">

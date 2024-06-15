@@ -16,21 +16,29 @@
 .custom-carousel-styles {
   height: 500px;
   max-width: 20rem;
-  margin-top: 5rem;
+  margin-top: 10rem;
   overflow: hidden;
+  font-size: x-small;
 }
 
 @media screen and (min-width: 50.625rem) {
   .custom-carousel-styles {
-    max-width: 450px;
+    max-width: 20rem;
     margin-top: 5rem;
+    font-size: small;
   }
 }
 
 @media screen and (min-width: 75rem) {
   .custom-carousel-styles {
     height: 480px;
-    max-width: 450px;
+    max-width: 500px;
     margin-top: 0;
+    font-size: medium;
   }
+}
+
+.logo-box-shadow {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
