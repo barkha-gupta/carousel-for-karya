@@ -23,7 +23,7 @@
 
 @media screen and (min-width: 50.625rem) {
   .custom-carousel-styles {
-    max-width: 20rem;
+    max-width: 24rem;
     margin-top: 5rem;
     font-size: small;
   }
@@ -32,7 +32,7 @@
 @media screen and (min-width: 75rem) {
   .custom-carousel-styles {
     height: 480px;
-    max-width: 500px;
+    max-width: 28rem;
     margin-top: 0;
     font-size: medium;
   }

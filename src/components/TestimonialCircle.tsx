@@ -1,4 +1,4 @@
-const TestimonialCircle = () => {
+const TestimonialCircle = ({ parallaxStyles }: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -7,6 +7,7 @@ const TestimonialCircle = () => {
       viewBox="0 0 1400 1400"
       fill="none"
       className="absolute"
+      style={parallaxStyles}
     >
       <circle
         cx="700"
