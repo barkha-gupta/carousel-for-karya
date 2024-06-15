@@ -3,7 +3,7 @@ import Testimony from "./Testimony";
 
 const MainComp = () => {
   return (
-    <div className="h-[700px] border border-black relative flex items-center justify-center overflow-hidden mt-10">
+    <div className="h-[800px] relative flex items-center justify-center overflow-hidden mt-20 ">
       <Testimony />
 
       <TestimonialCircle />

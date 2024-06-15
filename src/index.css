@@ -8,18 +8,22 @@
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
 }
+/* *::before,
+::after {
+  border-color: "#e2e8f0";
+} */
 
 .custom-carousel-styles {
   height: 500px;
   max-width: 20rem;
-  margin-top: 10rem;
+  margin-top: 5rem;
   overflow: hidden;
 }
 
 @media screen and (min-width: 50.625rem) {
   .custom-carousel-styles {
-    max-width: 640px;
-    margin-top: 10rem;
+    max-width: 450px;
+    margin-top: 5rem;
   }
 }
 
