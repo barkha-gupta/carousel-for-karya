@@ -9,20 +9,24 @@ const Carousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 3000,
+    speed: 200,
+    autoplaySpeed: 2000,
     cssEase: "linear",
+    arrows: false,
+    pauseOnHover: true,
+    // customPaging: () => (
+    //   <div
+    //     className={`w-[8px] h-[8px] my-2 bg-[#0082D7] rounded-[50%] opacity-40 focus:opacity-100 hover:opacity-100 `}
+    //   />
+    // ),
   };
 
   return (
-    <div className="w-[400px] text-sm tracking-wide text-[#1e293b] border border-red-500">
+    <div className="text-sm tracking-wide text-[#1e293b]">
       <Slider {...setting}>
         {carouselData.map(({ testimony, author, designation }) => (
-          <div className="h-[500px] w-full">
-            <div
-              key={author}
-              className="border border-slate-200 flex flex-col gap-4 h-full justify-center p-2"
-            >
+          <div key={author} className="h-[480px] w-full">
+            <div className="flex flex-col gap-4 h-full justify-center p-2">
               <div>{`"${testimony}"`}</div>
 
               <div className="flex gap-2 flex-wrap items-center">

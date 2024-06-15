@@ -1,10 +1,14 @@
 import "./App.css";
-import Carousel from "./components/Carousel";
+import MainComp from "./components/MainComp";
+import TestimonialCircle from "./components/TestimonialCircle";
+import Testimony from "./components/Testimony";
 
 function App() {
   return (
     <>
-      <Carousel />
+      <MainComp />
+      {/* <TestimonialCircle /> */}
+      {/* <Testimony /> */}
     </>
   );
 }
