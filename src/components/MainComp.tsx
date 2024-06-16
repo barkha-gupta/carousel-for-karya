@@ -5,20 +5,34 @@ import Testimony from "./Testimony";
 
 const MainComp = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 }); //we are storing the positions of x and y in state
+  const [isXlScreen, setIsXlScreen] = useState(false);
 
   useEffect(() => {
-    console.log(mousePosition);
-    const handleMouseMove = (event: any) => {
-      console.log(event);
+    const handleResize = () => {
+      setIsXlScreen(window.innerWidth >= 1280);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleMouseMove = (event: MouseEvent) => {
       setMousePosition({ x: event.clientX, y: event.clientY });
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    if (isXlScreen) {
+      window.addEventListener("mousemove", handleMouseMove);
+    }
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []);
+  }, [isXlScreen]);
 
   const calculateParallax = (input: any, maxMove: any) => {
     const movement = (input / window.innerWidth) * maxMove - maxMove / 2;
@@ -37,9 +51,9 @@ const MainComp = () => {
     <div className="h-[700px] relative flex items-center justify-center overflow-hidden ">
       <Testimony />
 
-      <TestimonialCircle parallaxStyles={parallaxStyles} />
+      <TestimonialCircle parallaxStyles={isXlScreen ? parallaxStyles : {}} />
 
-      <Logo parallaxStyles={parallaxStyles} />
+      <Logo parallaxStyles={isXlScreen ? parallaxStyles : {}} />
     </div>
   );
 };

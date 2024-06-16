@@ -6,7 +6,7 @@ const TestimonialCircle = ({ parallaxStyles }: any) => {
       height="1400"
       viewBox="0 0 1400 1400"
       fill="none"
-      className="absolute"
+      className={`absolute`}
       style={parallaxStyles}
     >
       <circle
