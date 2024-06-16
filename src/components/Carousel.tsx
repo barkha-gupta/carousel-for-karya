@@ -14,11 +14,6 @@ const Carousel = () => {
     cssEase: "linear",
     arrows: false,
     pauseOnHover: true,
-    // customPaging: () => (
-    //   <div
-    //     className={`w-[8px] h-[8px] my-2 bg-[#0082D7] rounded-[50%] opacity-40 focus:opacity-100 hover:opacity-100 `}
-    //   />
-    // ),
   };
 
   return (

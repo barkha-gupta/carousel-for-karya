@@ -8,10 +8,6 @@
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
 }
-/* *::before,
-::after {
-  border-color: "#e2e8f0";
-} */
 
 .custom-carousel-styles {
   height: 500px;

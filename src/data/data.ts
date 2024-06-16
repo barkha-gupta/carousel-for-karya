@@ -31,14 +31,12 @@ export const carouselData: CarouselData[] = [
   },
 ];
 
-// interface logoData {
-//   imageUrl: string;
-//   top: string;
-//   left?: string;
-//   right?: string;
-// }
+interface logoData {
+  imageUrl: string;
+  position: string;
+}
 
-export const logoData = [
+export const logoData: logoData[] = [
   {
     imageUrl:
       "https://imagedelivery.net/zZi_VLBckmtLzucvU2-pnQ/39d7500f-7966-41a6-0b6c-380ed1791600/w=96,q=75",
